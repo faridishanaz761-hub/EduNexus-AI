@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login | EduNexus AI</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="Css/login.css">
+  </head>
+
+  <body>
+    <main class="login-page">
+      <!-- LEFT SIDE -->
+
+      <div class="login-info">
+        <div class="login-brand">✦ EduNexus AI</div>
+
+        <h1>
+          Welcome back to
+          <span>your campus.</span>
+        </h1>
+
+        <p>
+          Access your personalized campus workspace, academic information and
+          intelligent AI assistance from one secure platform.
+        </p>
+      </div>
+
+      <!-- RIGHT SIDE -->
+
+      <div class="login-container">
+        <div class="login-card">
+          <div class="login-heading">
+            <h2>Sign in</h2>
+
+            <p>Enter your credentials to continue.</p>
+          </div>
+
+          <form id="loginForm">
+            <div class="input-group">
+              <label for="email"> Email Address </label>
+
+              <input
+                type="email"
+                id="email"
+                placeholder="you@college.edu"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="password"> Password </label>
+
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+
+            <div class="login-options">
+              <label class="remember">
+                <input type="checkbox" id="remember" />
+
+                <span>Remember me</span>
+              </label>
+
+              <a href="#"> Forgot password? </a>
+            </div>
+
+            <button type="submit" class="login-button">Sign In</button>
+
+            <div id="loginMessage" class="login-message"></div>
+          </form>
+
+          <div class="login-footer">
+            <span>Secure institutional access</span>
+
+            <span>•</span>
+
+            <span>EduNexus AI</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="javascript/api.js"></script>
+    <script src="javascript/auth.js"></script>
+  </body>
+</html>
